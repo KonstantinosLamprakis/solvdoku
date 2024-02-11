@@ -15,7 +15,7 @@ if ($grid !== false) {
     if (solveSudoku($grid)) {
         printGrid($grid);
     } else {
-        echo "No solution exits.";
+        echo "No solution exists.";
     }
 }
 
