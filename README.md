@@ -1,1 +1,1 @@
-"# solvdoku" 
+# solvdoku
