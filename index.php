@@ -138,9 +138,10 @@
                 <!-- <input type="submit" name="submit" value="Submit"><br> -->
             </form>
         </div>
-        <form action="index.php">
+        <form class="center-form" action="index.php">
             <input class="button" type="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" name="reset" value="Reset">
+            <p class="info-box"><?php if (isset($result)) { echo $result; }?></p>
         </form>
         <div class="table-container">
             <h2>Result Sudoku</h2>
@@ -317,8 +318,6 @@
                         inputmode="numeric"><br>
                 </div>
             </form>
-            <!-- @Konstantinos change the position of this -->
-            <p><?php if (isset($result)) { echo $result; }?></p>
         </div>
     </div>
 </body>
