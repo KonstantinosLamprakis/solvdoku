@@ -387,6 +387,7 @@
             </form>
         </div>
     </div>
+    <input type="submit" form="sudoku-input-form" value="[Keep Input]">
 </body>
 
 </html>
