@@ -15,10 +15,12 @@ define("SIZE", 9);
 if ($grid !== false) {
     if (!gridWorks($grid)) {
         echo "Bad input.";
-    } else if (solveSudoku($grid)) {
-        printGrid($grid);
     } else {
-        echo "No solution exists.";
+        $solutionFound = false;
+        solveSudoku($grid);
+        if ($solutionFound !== true) {
+            echo "No solution exists.";
+        }
     }
 }
 
@@ -77,13 +79,20 @@ function isSafe(array $grid, int $row, int $col, int $num) : bool {
     return true;
 }
 
+// return value specifies whether to halt execution
 function solveSudoku(array &$grid, int $row = 0, int $col = 0) : bool {
     if ($col === SIZE) {
         $row++;
         $col = 0;
     }
     if ($row === SIZE) {
-        return true;
+        if ($GLOBALS["solutionFound"] === true) {
+            echo "Warning: multiple solutions found.";
+            return true;
+        }
+        printGrid($grid);
+        $GLOBALS["solutionFound"] = true;
+        return false;
     }
 
     if ($grid[$row][$col] > 0) {
