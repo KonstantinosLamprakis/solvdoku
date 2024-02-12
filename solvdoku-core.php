@@ -18,7 +18,7 @@ if (isset($grid)) {
     $mygrid = &$grid;
 
     if (!gridWorks($grid)) {
-        echo "Bad input.";
+        $result = "Bad input.";
     } else {
         if (solveSudoku()) {
             $result = "We Found multiple solutions. This is one of them!";
