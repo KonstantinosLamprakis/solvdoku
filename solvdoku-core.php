@@ -12,9 +12,11 @@ define("SIZE", 9);
 //             [0, 0, 0, 0, 0, 0, 0, 7, 4],
 //             [0, 0, 5, 2, 0, 6, 3, 0, 0] ];
 
-$mygrid = &$grid;
 
-if ($grid !== false) {
+if (isset($grid)) {
+    
+    $mygrid = &$grid;
+
     if (!gridWorks($grid)) {
         echo "Bad input.";
     } else {

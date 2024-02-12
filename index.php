@@ -106,8 +106,6 @@
                     $grid[$y][$x] = (int) $_GET["data"][$i++];
                 }
             }
-        } else {
-            $grid = false;
         }
     ?>
     <?php include("solvdoku-core.php"); ?>
