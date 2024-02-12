@@ -22,16 +22,18 @@ if ($grid !== false) {
     }
 }
 
+// No action required, HTML updated automatically
 function printGrid(array $grid) : void {
-    for ($y = 0; $y < SIZE; $y++) {
-        for ($x = 0; $x < SIZE; $x++) {
-            echo $grid[$y][$x];
-            if ($x !== SIZE - 1) {
-                echo " ";
-            }
-        }
-        echo "<br>";
-    }
+    // for ($y = 0; $y < SIZE; $y++) {
+    //     for ($x = 0; $x < SIZE; $x++) {
+    //         echo $grid[$y][$x];
+    //         if ($x !== SIZE - 1) {
+    //             echo " ";
+    //         }
+    //     }
+    //     echo "<br>";
+    // }
+    return ;
 }
 
 function gridWorks(array $grid) : bool {
