@@ -10,10 +10,8 @@
 </head>
 
 <body>
-    <div>
-    
-</div>
-    <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <div id="sudoku-flex">
+    <form id="sudoku-input-form" method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <div id="grid"><input class="top left" type="number" min="1" max="9" autocomplete="off" maxlength="1" name="data[]"
                 inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off" maxlength="1" name="data[]"
                 inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off" maxlength="1" name="data[]"
@@ -97,7 +95,7 @@
                 inputmode="numeric"><input class="bottom right" type="number" min="1" max="9" autocomplete="off" maxlength="1" name="data[]"
                 inputmode="numeric"><br>
         </div>
-        <input type="submit" name="submit" value="Submit"><br>
+        <!-- <input type="submit" name="submit" value="Submit"><br> -->
         <!-- <?php #var_dump($_GET["data"]); ?> -->
     </form>
     <?php
@@ -113,7 +111,7 @@
         }
     ?>
     <?php include("solvdoku-core.php"); ?>
-    <form action="index.php">
+    <form method="POST" action="index.php">
         <input type="submit" name="reset" value="Reset">
     </form>
     <form>
@@ -201,6 +199,7 @@
                 inputmode="numeric"><br>
         </div>
     </form>
+    </div>
 </body>
 
 </html>
