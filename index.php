@@ -221,167 +221,167 @@
                     }
                 ?>
                 <div id="result-grid"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 0)?>"
+                        maxlength="1" value="<?php printCell(0, 0)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 1)?>"
+                        maxlength="1" value="<?php printCell(0, 1)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 2)?>"
+                        maxlength="1" value="<?php printCell(0, 2)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 3)?>"
+                        maxlength="1" value="<?php printCell(0, 3)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 4)?>"
+                        maxlength="1" value="<?php printCell(0, 4)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 5)?>"
+                        maxlength="1" value="<?php printCell(0, 5)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 6)?>"
+                        maxlength="1" value="<?php printCell(0, 6)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 7)?>"
+                        maxlength="1" value="<?php printCell(0, 7)?>" disabled
                         inputmode="numeric"><input class="right top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(0, 8)?>"
+                        maxlength="1" value="<?php printCell(0, 8)?>" disabled
                         inputmode="numeric"><br> <input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 0)?>"
+                        maxlength="1" value="<?php printCell(1, 0)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 1)?>"
+                        maxlength="1" value="<?php printCell(1, 1)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 2)?>"
+                        maxlength="1" value="<?php printCell(1, 2)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 3)?>"
+                        maxlength="1" value="<?php printCell(1, 3)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 4)?>"
+                        maxlength="1" value="<?php printCell(1, 4)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 5)?>"
+                        maxlength="1" value="<?php printCell(1, 5)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 6)?>"
+                        maxlength="1" value="<?php printCell(1, 6)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 7)?>"
+                        maxlength="1" value="<?php printCell(1, 7)?>" disabled
                         inputmode="numeric"><input class="right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(1, 8)?>"
+                        maxlength="1" value="<?php printCell(1, 8)?>" disabled
                         inputmode="numeric"><br> <input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 0)?>"
+                        maxlength="1" value="<?php printCell(2, 0)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 1)?>"
+                        maxlength="1" value="<?php printCell(2, 1)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 2)?>"
+                        maxlength="1" value="<?php printCell(2, 2)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 3)?>"
+                        maxlength="1" value="<?php printCell(2, 3)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 4)?>"
+                        maxlength="1" value="<?php printCell(2, 4)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 5)?>"
+                        maxlength="1" value="<?php printCell(2, 5)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 6)?>"
+                        maxlength="1" value="<?php printCell(2, 6)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 7)?>"
+                        maxlength="1" value="<?php printCell(2, 7)?>" disabled
                         inputmode="numeric"><input class="right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(2, 8)?>"
+                        maxlength="1" value="<?php printCell(2, 8)?>" disabled
                         inputmode="numeric"><br> <input class="top left" type="number" min="1" max="9"
-                        autocomplete="off" maxlength="1" value="<?php printCell(3, 0)?>"
+                        autocomplete="off" maxlength="1" value="<?php printCell(3, 0)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 1)?>"
+                        maxlength="1" value="<?php printCell(3, 1)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 2)?>"
+                        maxlength="1" value="<?php printCell(3, 2)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 3)?>"
+                        maxlength="1" value="<?php printCell(3, 3)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 4)?>"
+                        maxlength="1" value="<?php printCell(3, 4)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 5)?>"
+                        maxlength="1" value="<?php printCell(3, 5)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 6)?>"
+                        maxlength="1" value="<?php printCell(3, 6)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 7)?>"
+                        maxlength="1" value="<?php printCell(3, 7)?>" disabled
                         inputmode="numeric"><input class="right top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(3, 8)?>"
+                        maxlength="1" value="<?php printCell(3, 8)?>" disabled
                         inputmode="numeric"><br> <input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 0)?>"
+                        maxlength="1" value="<?php printCell(4, 0)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 1)?>"
+                        maxlength="1" value="<?php printCell(4, 1)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 2)?>"
+                        maxlength="1" value="<?php printCell(4, 2)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 3)?>"
+                        maxlength="1" value="<?php printCell(4, 3)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 4)?>"
+                        maxlength="1" value="<?php printCell(4, 4)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 5)?>"
+                        maxlength="1" value="<?php printCell(4, 5)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 6)?>"
+                        maxlength="1" value="<?php printCell(4, 6)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 7)?>"
+                        maxlength="1" value="<?php printCell(4, 7)?>" disabled
                         inputmode="numeric"><input class="right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(4, 8)?>"
+                        maxlength="1" value="<?php printCell(4, 8)?>" disabled
                         inputmode="numeric"><br> <input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 0)?>"
+                        maxlength="1" value="<?php printCell(5, 0)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 1)?>"
+                        maxlength="1" value="<?php printCell(5, 1)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 2)?>"
+                        maxlength="1" value="<?php printCell(5, 2)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 3)?>"
+                        maxlength="1" value="<?php printCell(5, 3)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 4)?>"
+                        maxlength="1" value="<?php printCell(5, 4)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 5)?>"
+                        maxlength="1" value="<?php printCell(5, 5)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 6)?>"
+                        maxlength="1" value="<?php printCell(5, 6)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 7)?>"
+                        maxlength="1" value="<?php printCell(5, 7)?>" disabled
                         inputmode="numeric"><input class="right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(5, 8)?>"
+                        maxlength="1" value="<?php printCell(5, 8)?>" disabled
                         inputmode="numeric"><br> <input class="top left" type="number" min="1" max="9"
-                        autocomplete="off" maxlength="1" value="<?php printCell(6, 0)?>"
+                        autocomplete="off" maxlength="1" value="<?php printCell(6, 0)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 1)?>"
+                        maxlength="1" value="<?php printCell(6, 1)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 2)?>"
+                        maxlength="1" value="<?php printCell(6, 2)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 3)?>"
+                        maxlength="1" value="<?php printCell(6, 3)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 4)?>"
+                        maxlength="1" value="<?php printCell(6, 4)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 5)?>"
+                        maxlength="1" value="<?php printCell(6, 5)?>" disabled
                         inputmode="numeric"><input class="top left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 6)?>"
+                        maxlength="1" value="<?php printCell(6, 6)?>" disabled
                         inputmode="numeric"><input class="top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 7)?>"
+                        maxlength="1" value="<?php printCell(6, 7)?>" disabled
                         inputmode="numeric"><input class="right top" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(6, 8)?>"
+                        maxlength="1" value="<?php printCell(6, 8)?>" disabled
                         inputmode="numeric"><br> <input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 0)?>"
+                        maxlength="1" value="<?php printCell(7, 0)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 1)?>"
+                        maxlength="1" value="<?php printCell(7, 1)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 2)?>"
+                        maxlength="1" value="<?php printCell(7, 2)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 3)?>"
+                        maxlength="1" value="<?php printCell(7, 3)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 4)?>"
+                        maxlength="1" value="<?php printCell(7, 4)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 5)?>"
+                        maxlength="1" value="<?php printCell(7, 5)?>" disabled
                         inputmode="numeric"><input class="left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 6)?>"
+                        maxlength="1" value="<?php printCell(7, 6)?>" disabled
                         inputmode="numeric"><input class="" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 7)?>"
+                        maxlength="1" value="<?php printCell(7, 7)?>" disabled
                         inputmode="numeric"><input class="right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(7, 8)?>"
+                        maxlength="1" value="<?php printCell(7, 8)?>" disabled
                         inputmode="numeric"><br> <input class="bottom left" type="number" min="1" max="9"
-                        autocomplete="off" maxlength="1" value="<?php printCell(8, 0)?>"
+                        autocomplete="off" maxlength="1" value="<?php printCell(8, 0)?>" disabled
                         inputmode="numeric"><input class="bottom" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 1)?>"
+                        maxlength="1" value="<?php printCell(8, 1)?>" disabled
                         inputmode="numeric"><input class="bottom" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 2)?>"
+                        maxlength="1" value="<?php printCell(8, 2)?>" disabled
                         inputmode="numeric"><input class="bottom left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 3)?>"
+                        maxlength="1" value="<?php printCell(8, 3)?>" disabled
                         inputmode="numeric"><input class="bottom" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 4)?>"
+                        maxlength="1" value="<?php printCell(8, 4)?>" disabled
                         inputmode="numeric"><input class="bottom" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 5)?>"
+                        maxlength="1" value="<?php printCell(8, 5)?>" disabled
                         inputmode="numeric"><input class="bottom left" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 6)?>"
+                        maxlength="1" value="<?php printCell(8, 6)?>" disabled
                         inputmode="numeric"><input class="bottom" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 7)?>"
+                        maxlength="1" value="<?php printCell(8, 7)?>" disabled
                         inputmode="numeric"><input class="bottom right" type="number" min="1" max="9" autocomplete="off"
-                        maxlength="1" value="<?php printCell(8, 8)?>"
+                        maxlength="1" value="<?php printCell(8, 8)?>" disabled
                         inputmode="numeric"><br>
                 </div>
             </form>
