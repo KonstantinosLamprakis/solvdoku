@@ -40,3 +40,8 @@ input[type='text'], input[type='number'] {
 .right {
     border-right: 2px solid black !important
 }
+
+#sudoku-flex {
+    display: flex;
+    justify-content: center;
+  }
