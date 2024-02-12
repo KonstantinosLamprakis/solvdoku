@@ -388,6 +388,8 @@
         </div>
     </div>
     <input type="submit" form="sudoku-input-form" value="[Keep Input]">
+    <footer>
+        created by Konstantinos Lamprakis and Arthur Zhu I think
+    </footer>
 </body>
-
 </html>
