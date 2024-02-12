@@ -99,7 +99,7 @@
         <!-- <?php #var_dump($_GET["data"]); ?> -->
     </form>
     <?php
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        if (array_key_exists("data", $_GET)) {
             $i = 0;
             for ($y = 0; $y < 9; $y++) {
                 for ($x = 0; $x < 9; $x++) {
@@ -112,7 +112,6 @@
     ?>
     <?php include("solvdoku-core.php"); ?>
     <form method="POST" action="index.php">
-        <input type="submit" form="sudoku-input-form" value="Solve It!"/>
         <input type="submit" name="reset" value="Reset">
     </form>
     <form>
