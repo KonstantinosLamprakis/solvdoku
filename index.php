@@ -21,6 +21,11 @@
 </head>
 
 <body>
+    <div class="video-container">
+        <video autoplay muted id="myVideo">
+            <source src="./assets/sudoku.mp4" type="video/mp4">
+        </video>
+    </div>
     <div id="sudoku-flex">
         <div class="table-container">
             <h2>Input Initial Sudoku Table</h2>

@@ -1,9 +1,6 @@
-html {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 32px;
+html body {
+    margin: 0px;
+    margin-bottom: 30px;
 }
 
 input::-webkit-outer-spin-button,
@@ -43,14 +40,14 @@ input[type='number'] {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-.table-container h2{
+.table-container h2 {
     text-align: center;
     color: #EC8513;
 }
 
-.table-container{
+.table-container {
     margin: 0 50px;
 }
 
@@ -70,20 +67,20 @@ input[type='number'] {
 }
 
 .button:hover {
-    background-color: white; 
-    color: #6A1366; 
-  }
+    background-color: white;
+    color: #6A1366;
+}
 
-  .info-box{
+.info-box {
     border-left: 5px solid #6A1366;
     /* border-right: 5px solid #6A1366; */
     background-color: #f9bbf7;
     padding: 15px;
     max-width: 250px;
     text-align: center;
-  }
+}
 
-.center-form{
+.center-form {
     text-align: center;
     margin-top: 15px;
 }
@@ -91,6 +88,18 @@ input[type='number'] {
 @media only screen and (max-width: 1290px) {
     #sudoku-flex {
         flex-direction: column;
+        margin: 0 auto;
     }
+}
 
-  }
+@media only screen and (min-width: 600px) {
+    .video-container #myVideo {
+        width: 80%;
+    }
+}
+
+.video-container {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
