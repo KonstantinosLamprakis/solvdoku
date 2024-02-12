@@ -9,7 +9,7 @@
     <title>Sudoku Solution Calculator | Solvdoku</title>
     <link rel="stylesheet" href="css/style.css">
     <?php
-    if (array_key_exists("data", $_GET)) {
+    if (array_key_exists("data", $_GET) && isset($_GET["submit"])) {
         $i = 0;
         for ($y = 0; $y < 9; $y++) {
             for ($x = 0; $x < 9; $x++) {
@@ -206,8 +206,8 @@
             </form>
         </div>
         <form class="center-form" action="index.php">
-            <input class="button" type="submit" form="sudoku-input-form" value="Solve It!" />
-            <input class="button" type="submit" name="reset" value="Reset">
+            <input class="button" type="submit" name="submit" form="sudoku-input-form" value="Solve It!" />
+            <input class="button" type="submit" value="Reset">
             <p class="info-box"><?php if (isset($result)) { echo $result; }?></p>
         </form>
         <div class="table-container">
