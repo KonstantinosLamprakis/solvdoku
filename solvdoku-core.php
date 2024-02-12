@@ -20,9 +20,10 @@ if (isset($grid)) {
     if (!gridWorks($grid)) {
         echo "Bad input.";
     } else {
-        solveSudoku();
-        if (!isset($grid2)) {
-            echo "No solution exists.";
+        if (solveSudoku()) {
+            $result = "Warning: multiple solutions found.";
+        } else if (!isset($grid2)) {
+            $result = "No solution exists.";
         }
     }
 }
