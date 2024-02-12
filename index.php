@@ -7,6 +7,17 @@
     <link rel="icon" type="image/png" href="./assets/images/sudoku solution 500.png">
     <title>Sudoku Solution Calculator | Solvdoku</title>
     <link rel="stylesheet" href="css/style.css">
+    <?php
+    if (array_key_exists("data", $_GET)) {
+        $i = 0;
+        for ($y = 0; $y < 9; $y++) {
+            for ($x = 0; $x < 9; $x++) {
+                $grid[$y][$x] = (int) $_GET["data"][$i++];
+            }
+        }
+    }
+    ?>
+    <?php include("solvdoku-core.php"); ?>
 </head>
 
 <body>
@@ -126,19 +137,7 @@
                 <!-- <input type="submit" name="submit" value="Submit"><br> -->
             </form>
         </div>
-
-        <?php
-        if (array_key_exists("data", $_GET)) {
-            $i = 0;
-            for ($y = 0; $y < 9; $y++) {
-                for ($x = 0; $x < 9; $x++) {
-                    $grid[$y][$x] = (int) $_GET["data"][$i++];
-                }
-            }
-        }
-    ?>
-        <?php include("solvdoku-core.php"); ?>
-        <form class="center-form" method="POST" action="index.php">
+        <form action="index.php">
             <input class="button" type="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" name="reset" value="Reset">
             <p class="info-box">This is the Apps Message, that displays success, warning, errors or whatever</p>
@@ -311,8 +310,9 @@
                         inputmode="numeric"><br>
                 </div>
             </form>
+            <!-- @Konstantinos change the position of this -->
+            <p><?php if (isset($result)) { echo $result; }?></p>
         </div>
-
     </div>
 </body>
 
