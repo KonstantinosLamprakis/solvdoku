@@ -12,33 +12,22 @@ define("SIZE", 9);
 //             [0, 0, 0, 0, 0, 0, 0, 7, 4],
 //             [0, 0, 5, 2, 0, 6, 3, 0, 0] ];
 
-if ($grid !== false) {
+
+if (isset($grid)) {
+    
+    $mygrid = &$grid;
+
     if (!gridWorks($grid)) {
         echo "Bad input.";
     } else {
-        $solutionFound = false;
-        solveSudoku($grid);
-        if ($solutionFound !== true) {
+        solveSudoku();
+        if (!isset($grid2)) {
             echo "No solution exists.";
         }
     }
 }
 
-// No action required, HTML updated automatically
-function printGrid(array $grid) : void {
-    // for ($y = 0; $y < SIZE; $y++) {
-    //     for ($x = 0; $x < SIZE; $x++) {
-    //         echo $grid[$y][$x];
-    //         if ($x !== SIZE - 1) {
-    //             echo " ";
-    //         }
-    //     }
-    //     echo "<br>";
-    // }
-    return ;
-}
-
-function gridWorks(array $grid) : bool {
+function gridWorks(array &$grid) : bool {
     for ($y = 0; $y < SIZE; $y++) {
         for ($x = 0; $x < SIZE; $x++) {
             if ($grid[$y][$x] === 0) {
@@ -46,24 +35,25 @@ function gridWorks(array $grid) : bool {
             }
             $num = $grid[$y][$x];
             $grid[$y][$x] = 0;
-            if (!isSafe($grid, $y, $x, $num)) {
+            $isSafe = isSafe($y, $x, $num);
+            $grid[$y][$x] = $num;
+            if (!$isSafe) {
                 return false;
             }
-            $grid[$y][$x] = $num;
         }
     }
     return true;
 }
 
 
-function isSafe(array $grid, int $row, int $col, int $num) : bool {
+function isSafe(int $row, int $col, int $num) : bool {
     for ($i = 0; $i < SIZE; $i++) {
-        if ($grid[$row][$i] === $num) {
+        if ($GLOBALS["mygrid"][$row][$i] === $num) {
             return false;
         }
     }
     for ($i = 0; $i < SIZE; $i++) {
-        if ($grid[$i][$col] === $num) {
+        if ($GLOBALS["mygrid"][$i][$col] === $num) {
             return false;
         }
     }
@@ -72,7 +62,7 @@ function isSafe(array $grid, int $row, int $col, int $num) : bool {
 
     for ($y = 0; $y < 3; $y++) {
         for ($x = 0; $x < 3; $x++) {
-            if ($grid[$startRow + $y][$startCol + $x] === $num) {
+            if ($GLOBALS["mygrid"][$startRow + $y][$startCol + $x] === $num) {
                 return false;
             }
         }
@@ -82,34 +72,34 @@ function isSafe(array $grid, int $row, int $col, int $num) : bool {
 }
 
 // return value specifies whether to halt execution
-function solveSudoku(array &$grid, int $row = 0, int $col = 0) : bool {
+function solveSudoku(int $row = 0, int $col = 0) : bool {
     if ($col === SIZE) {
         $row++;
         $col = 0;
     }
     if ($row === SIZE) {
-        if ($GLOBALS["solutionFound"] === true) {
-            //echo "Warning: multiple solutions found.";
+        if (isset($GLOBALS["grid2"])) {
+            echo "Warning: multiple solutions found.";
             return true;
         }
-        printGrid($grid);
-        $GLOBALS["solutionFound"] = true;
+        $GLOBALS["grid2"] = $GLOBALS["grid"];
+        $GLOBALS["mygrid"] = &$GLOBALS["grid2"];
         return false;
     }
 
-    if ($grid[$row][$col] > 0) {
-        return (solveSudoku($grid, $row, $col + 1));
+    if ($GLOBALS["mygrid"][$row][$col] > 0) {
+        return (solveSudoku($row, $col + 1));
     }
 
     for ($num = 1; $num <= SIZE; $num++) {
-        if (isSafe($grid, $row, $col, $num)) {
-            $grid[$row][$col] = $num;
-            if (solveSudoku($grid, $row, $col + 1)) {
+        if (isSafe($row, $col, $num)) {
+            $GLOBALS["mygrid"][$row][$col] = $num;
+            if (solveSudoku($row, $col + 1)) {
                 return true;
             }
         }
 
-        $grid[$row][$col] = 0;
+        $GLOBALS["mygrid"][$row][$col] = 0;
     }
     return false;
 }
