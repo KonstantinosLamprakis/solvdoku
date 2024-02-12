@@ -89,7 +89,7 @@ function solveSudoku(array &$grid, int $row = 0, int $col = 0) : bool {
     }
     if ($row === SIZE) {
         if ($GLOBALS["solutionFound"] === true) {
-            echo "Warning: multiple solutions found.";
+            //echo "Warning: multiple solutions found.";
             return true;
         }
         printGrid($grid);

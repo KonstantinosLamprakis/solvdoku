@@ -4,7 +4,6 @@ html {
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 32px;
-    max-width: 1024px
 }
 
 input::-webkit-outer-spin-button,
@@ -13,7 +12,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type='text'], input[type='number'] {
+input[type='number'] {
     border: 1px dotted black;
     -moz-appearance: textfield;
     -webkit-appearance: none;
@@ -44,4 +43,33 @@ input[type='text'], input[type='number'] {
 #sudoku-flex {
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+.table-container h2{
+    text-align: center;
+}
+
+.table-container{
+    margin: 0 50px;
+}
+
+.button {
+    background-color: #EC8513;
+    border: 2px solid #EC8513;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white; 
+    color: #6A1366; 
   }
