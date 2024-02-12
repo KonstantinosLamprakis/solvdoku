@@ -7,8 +7,17 @@ html {
     max-width: 1024px
 }
 
-input[type='text'] {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='text'], input[type='number'] {
     border: 1px dotted black;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
     height: 40px;
     width: 40px;
     font-size: 20px;
