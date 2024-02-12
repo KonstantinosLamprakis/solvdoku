@@ -20,9 +20,10 @@ if (isset($grid)) {
     if (!gridWorks($grid)) {
         echo "Bad input.";
     } else {
-        solveSudoku();
-        if (!isset($grid2)) {
-            echo "No solution exists.";
+        if (solveSudoku()) {
+            $result = "Warning: multiple solutions found.";
+        } else if (!isset($grid2)) {
+            $result = "No solution exists.";
         }
     }
 }
@@ -79,7 +80,6 @@ function solveSudoku(int $row = 0, int $col = 0) : bool {
     }
     if ($row === SIZE) {
         if (isset($GLOBALS["grid2"])) {
-            echo "Warning: multiple solutions found.";
             return true;
         }
         $GLOBALS["grid2"] = $GLOBALS["grid"];

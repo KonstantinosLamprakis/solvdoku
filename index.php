@@ -310,8 +310,9 @@
                         inputmode="numeric"><br>
                 </div>
             </form>
+            <!-- @Konstantinos change the position of this -->
+            <p><?php if (isset($result)) { echo $result; }?></p>
         </div>
-
     </div>
 </body>
 
