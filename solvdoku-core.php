@@ -11,8 +11,11 @@ define("SIZE", 9);
 //             [1, 3, 0, 0, 0, 0, 2, 5, 0],
 //             [0, 0, 0, 0, 0, 0, 0, 7, 4],
 //             [0, 0, 5, 2, 0, 6, 3, 0, 0] ];
+
 if ($grid !== false) {
-    if (solveSudoku($grid)) {
+    if (!gridWorks($grid)) {
+        echo "Bad input.";
+    } else if (solveSudoku($grid)) {
         printGrid($grid);
     } else {
         echo "No solution exists.";
@@ -30,6 +33,24 @@ function printGrid(array $grid) : void {
         echo "<br>";
     }
 }
+
+function gridWorks(array $grid) : bool {
+    for ($y = 0; $y < SIZE; $y++) {
+        for ($x = 0; $x < SIZE; $x++) {
+            if ($grid[$y][$x] === 0) {
+                continue;
+            }
+            $num = $grid[$y][$x];
+            $grid[$y][$x] = 0;
+            if (!isSafe($grid, $y, $x, $num)) {
+                return false;
+            }
+            $grid[$y][$x] = $num;
+        }
+    }
+    return true;
+}
+
 
 function isSafe(array $grid, int $row, int $col, int $num) : bool {
     for ($i = 0; $i < SIZE; $i++) {
