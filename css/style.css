@@ -13,31 +13,30 @@ input::-webkit-inner-spin-button {
 }
 
 input[type='number'] {
-    border: 1px dotted black;
-    -moz-appearance: textfield;
-    -webkit-appearance: none;
+    border: 1px dotted #6A1366;
     margin: 0;
     height: 40px;
     width: 40px;
     font-size: 20px;
     text-align: center;
-    padding: 0
+    padding: 0;
+    box-shadow: 0 0 4px #6A1366;
 }
 
 .top {
-    border-top: 2px solid black !important
+    border-top: 2px solid #6A1366 !important
 }
 
 .bottom {
-    border-bottom: 2px solid black !important
+    border-bottom: 2px solid #6A1366 !important
 }
 
 .left {
-    border-left: 2px solid black !important
+    border-left: 2px solid #6A1366 !important
 }
 
 .right {
-    border-right: 2px solid black !important
+    border-right: 2px solid #6A1366 !important
 }
 
 #sudoku-flex {
@@ -48,6 +47,7 @@ input[type='number'] {
 
 .table-container h2{
     text-align: center;
+    color: #EC8513;
 }
 
 .table-container{
@@ -72,4 +72,25 @@ input[type='number'] {
 .button:hover {
     background-color: white; 
     color: #6A1366; 
+  }
+
+  .info-box{
+    border-left: 5px solid #6A1366;
+    /* border-right: 5px solid #6A1366; */
+    background-color: #f9bbf7;
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+  }
+
+.center-form{
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1290px) {
+    #sudoku-flex {
+        flex-direction: column;
+    }
+
   }
