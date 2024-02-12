@@ -138,7 +138,7 @@
         }
     ?>
         <?php include("solvdoku-core.php"); ?>
-        <form method="POST" action="index.php">
+        <form action="index.php">
             <input class="button" type="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" name="reset" value="Reset">
         </form>
