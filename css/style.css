@@ -6,8 +6,8 @@ html body {
     color: #EC8513;
 }
 
-.output-call-faulty {
-    background-color: #EC851380;
+input[type='number'].output-cell-faulty {
+    background-color: #f0a856;
     color: #6A1366;
 }
 
@@ -110,7 +110,7 @@ input[type='number'] {
         font-size: 15px;
     }
 
-    .table-container{
+    .table-container {
         background: initial;
     }
 }
@@ -145,7 +145,7 @@ input[type='number'] {
     padding-bottom: 20px;
   }
 
-footer{
+footer {
     border-left: 5px solid #6A1366;
     background: rgba(249, 187, 247, 0.8);
     padding: 15px;
@@ -154,7 +154,7 @@ footer{
     margin: 20px auto;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #EC8513;
     text-shadow: 1px 1px black;
