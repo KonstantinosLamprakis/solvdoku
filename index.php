@@ -210,12 +210,11 @@
         <form class="center-form" action="index.php">
             <input class="button" type="submit" name="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" value="Reset">
-            <div><input class="button" type="submit" form="sudoku-input-form" value="Reset But Keep Input"></div>
             <p class="info-box">
                 <?php if (isset($result)) {
                     echo $result;
                 }else{
-                    echo "Thanks for using our software. Hope you enjoy it &#128151;";
+                    echo "Thanks for using our sudoku solver. Hope you enjoy it &#128151;";
                 } ?>
             </p>
         </form>
@@ -411,7 +410,7 @@
         </div>
     </div>
     <footer>
-        Created by Konstantinos Lamprakis &#129309; Arthur Zhu.
+        The sudoku solver was created by<br/>Konstantinos Lamprakis &#129309; Arthur Zhu
     </footer>
     </div>
 </body>
