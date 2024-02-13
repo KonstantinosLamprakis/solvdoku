@@ -444,7 +444,7 @@
             </div>
         </div>
         <footer>
-            The sudoku solver was created by<br />Konstantinos Lamprakis &#129309; Arthur Zhu <i>I think</i>
+            The sudoku solver was created by<br />Konstantinos Lamprakis &#129309; Arthur Zhu
         </footer>
     </div>
 </body>
