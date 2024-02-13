@@ -445,7 +445,8 @@
         </div>
         <footer>
             The sudoku solver was created by<br />Konstantinos Lamprakis &#129309; Arthur Zhu<br>
-            pls, pls pls just use google chrome on windows, then it will work. thx
+            pls, pls pls just use google chrome on windows, then it will work. thx<br>
+            ps. don't trust Konstantinos he will delete your footer and your dreams thx
         </footer>
     </div>
 </body>
