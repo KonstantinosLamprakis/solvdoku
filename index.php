@@ -215,7 +215,7 @@
                 <?php if (isset($result)) {
                     echo $result;
                 }else{
-                    echo "Thanks for using our software. Hope you enjoy it!";
+                    echo "Thanks for using our software. Hope you enjoy it &#128151;";
                 } ?>
             </p>
         </form>
@@ -411,7 +411,7 @@
         </div>
     </div>
     <footer>
-        created by Konstantinos Lamprakis and Arthur Zhu I think
+        Created by Konstantinos Lamprakis &#129309; Arthur Zhu.
     </footer>
     </div>
 </body>
