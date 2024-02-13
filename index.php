@@ -35,7 +35,7 @@
                 function printCellInput(int $y, int $x): void
                 {
                     if (!empty($_GET['data'][$y * 9 + $x])) {
-                        echo $_GET['data'][$y * 9 + $x];
+                        echo (int)$_GET['data'][$y * 9 + $x];
                     }
                 }
                 ?>
