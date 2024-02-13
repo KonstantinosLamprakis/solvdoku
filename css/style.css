@@ -44,6 +44,7 @@ input[type='number'] {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .table-container h2 {
@@ -89,21 +90,29 @@ input[type='number'] {
     margin-top: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+    input[type='number'] {
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 1290px) {
     #sudoku-flex {
         flex-direction: column;
         margin: 0 auto;
     }
-}
-
-@media only screen and (min-width: 600px) {
-    .video-container #myVideo {
-        width: 80%;
+    .table-container {
+        margin: 0 10px;
     }
 }
 
 .video-container {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     margin: 0px;
+}
+
+.video-container #myVideo {
+    max-width: 100%;
 }
