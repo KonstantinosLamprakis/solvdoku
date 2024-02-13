@@ -245,7 +245,7 @@
                     if (isset($GLOBALS["faultyCells"]) && !empty($_GET['data'][$y * 9 + $x])) {
                         foreach ($GLOBALS["faultyCells"] as $cell) {
                             if (["x" => $x, "y" => $y] === $cell) {
-                                echo "output-call-faulty";
+                                echo "output-cell-faulty";
                             }
                         }
                     }
