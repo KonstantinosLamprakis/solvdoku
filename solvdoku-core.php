@@ -19,10 +19,10 @@ if (isset($grid)) {
 
     checkGrid($grid);
     if (isset($GLOBALS["faultyCells"])) {
-        $result = "Bad input.";
+        $result = "&#129488; Hmmm... Bad input. Make sure you didn't insert same number twice in a row/column.";
     } else {
         if (solveSudoku()) {
-            $result = "We Found multiple solutions. This is one of them!";
+            $result = "We Found multiple solutions. This is one of them &#128521; &#128073; .";
         } else if (!isset($grid2)) {
             $result = "No solution exists.";
         }
@@ -133,7 +133,3 @@ function solveSudoku(int $row = 0, int $col = 0) : bool {
     }
     return false;
 }
-
-// print grid
-
-// checks whether legal to assign to cell
