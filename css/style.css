@@ -6,8 +6,8 @@ html body {
     color: #EC8513;
 }
 
-.output-call-faulty {
-    background-color: #EC851380;
+input[type='number'].output-cell-faulty {
+    background-color: #f0a856;
     color: #6A1366;
 }
 
