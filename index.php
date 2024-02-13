@@ -1,4 +1,16 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1);
+
+        if (count($_GET) == 0) {
+            if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+                $uri = 'https://';
+            } else {
+                $uri = 'http://';
+            }
+            $uri .= $_SERVER['HTTP_HOST'];
+            header('Location: '.$uri.$_SERVER['PHP_SELF'].'?x=#input');
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,8 +42,8 @@
     </div>
     <div id="sudoku-flex">
         <div class="table-container">
-            <h2 class="shadow-text">Input Initial Sudoku Table</h2>
-            <form id="sudoku-input-form" method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <h2 id="input" class="shadow-text">Input Initial Sudoku Table</h2>
+            <form id="sudoku-input-form" method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])."#centerpiece"; ?>">
                 <?php
                 function printCellInput(int $y, int $x): void
                 {
@@ -207,7 +219,7 @@
                 <!-- <input type="submit" name="submit" value="Submit"><br> -->
             </form>
         </div>
-        <form class="center-form" action="index.php">
+        <form class="center-form" action="index.php#input" id="centerpiece">
             <input class="button" type="submit" name="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" value="Reset">
             <p class="info-box">
@@ -410,7 +422,7 @@
         </div>
     </div>
     <footer>
-        The sudoku solver was created by<br/>Konstantinos Lamprakis &#129309; Arthur Zhu
+        The sudoku solver was created by<br/>Konstantinos Lamprakis &#129309; Arthur Zhu <b>I think<b>
     </footer>
     </div>
 </body>
