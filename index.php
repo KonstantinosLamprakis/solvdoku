@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <div class="parallax">
     <div class="video-container">
         <video autoplay muted id="myVideo">
             <source src="./assets/sudoku.mp4" type="video/mp4">
@@ -387,9 +388,11 @@
             </form>
         </div>
     </div>
+
     <input type="submit" form="sudoku-input-form" value="[Keep Input]">
     <footer>
         created by Konstantinos Lamprakis and Arthur Zhu I think
     </footer>
+    </div>
 </body>
 </html>

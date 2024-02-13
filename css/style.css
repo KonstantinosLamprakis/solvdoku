@@ -1,6 +1,5 @@
 html body {
     margin: 0px;
-    margin-bottom: 30px;
 }
 
 input::-webkit-outer-spin-button,
@@ -112,3 +111,12 @@ input[type='number'] {
 .video-container #myVideo {
     max-width: 100%;
 }
+
+.parallax {
+    background-image: url('../assets/images/sudoku-solution-background.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
