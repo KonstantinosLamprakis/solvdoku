@@ -17,7 +17,8 @@ if (isset($grid)) {
     
     $mygrid = &$grid;
 
-    if (!gridWorks($grid)) {
+    checkGrid($grid);
+    if (isset($GLOBALS["faultyCells"])) {
         $result = "Bad input.";
     } else {
         if (solveSudoku()) {
@@ -28,7 +29,7 @@ if (isset($grid)) {
     }
 }
 
-function gridWorks(array &$grid) : bool {
+function checkGrid(array &$grid) : void {
     for ($y = 0; $y < SIZE; $y++) {
         for ($x = 0; $x < SIZE; $x++) {
             if ($grid[$y][$x] === 0) {
@@ -37,24 +38,55 @@ function gridWorks(array &$grid) : bool {
             $num = $grid[$y][$x];
             $grid[$y][$x] = 0;
             $isSafe = isSafe($y, $x, $num);
+            if (!$isSafe) {
+                $GLOBALS["faultyCells"][] = ["x" => $x, "y" => $y];
+                findFaulty($y, $x, $num);
+            }
             $grid[$y][$x] = $num;
             if (!$isSafe) {
-                return false;
+                return;
             }
         }
     }
-    return true;
 }
 
+function findFaulty(int $row, int $col, int $num) : void {
+    for ($i = 0; $i < SIZE; $i++) {
+        if ($GLOBALS["mygrid"][$row][$i] === $num) {
+            $GLOBALS["faultyCells"][] = ["x" => $i, "y" => $row];
+            return;
+        }
+    }
+    for ($i = 0; $i < SIZE; $i++) {
+        if ($GLOBALS["mygrid"][$i][$col] === $num) {
+            $GLOBALS["faultyCels"][] = ["x" => $col, "y" => $i];
+            return;
+        }
+    }
+    $startRow = $row - $row % 3;
+    $startCol = $col - $col % 3;
+
+    for ($y = 0; $y < 3; $y++) {
+        for ($x = 0; $x < 3; $x++) {
+            if ($GLOBALS["mygrid"][$startRow + $y][$startCol + $x] === $num) {
+                $GLOBALS["faultyCells"][] = ["x" => $startCol + $x, "y" => $startRow + $y];
+                return;
+            }
+        }
+    }
+}
 
 function isSafe(int $row, int $col, int $num) : bool {
     for ($i = 0; $i < SIZE; $i++) {
         if ($GLOBALS["mygrid"][$row][$i] === $num) {
+            $GLOBALS["faultyCell"][] = ["x" => $row, "y" => $i];
             return false;
         }
     }
     for ($i = 0; $i < SIZE; $i++) {
         if ($GLOBALS["mygrid"][$i][$col] === $num) {
+            $GLOBALS["faultyCell"][] = ["x" => $row, "y" => $col];
+            $GLOBALS["faultyCell"][] = ["x" => $i, "y" => $col];
             return false;
         }
     }
@@ -64,6 +96,8 @@ function isSafe(int $row, int $col, int $num) : bool {
     for ($y = 0; $y < 3; $y++) {
         for ($x = 0; $x < 3; $x++) {
             if ($GLOBALS["mygrid"][$startRow + $y][$startCol + $x] === $num) {
+                $GLOBALS["faultyCell"][] = ["x" => $row, "y" => $col];
+                $GLOBALS["faultyCell"][] = ["x" => $startCol + $x, "y" => $startRow + $y];
                 return false;
             }
         }

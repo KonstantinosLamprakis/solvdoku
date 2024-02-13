@@ -3,8 +3,12 @@ html body {
     margin-bottom: 30px;
 }
 
-.solution-cell-calculated {
+.output-cell-calculated {
     color: #EC8513;
+}
+
+.output-call-faulty {
+    background-color: #EC8513;
 }
 
 input::-webkit-outer-spin-button,
