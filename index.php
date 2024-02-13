@@ -50,7 +50,7 @@
                 function printCellInput(int $y, int $x): void
                 {
                     if (!empty($_GET['data'][$y * 9 + $x])) {
-                        echo (int)$_GET['data'][$y * 9 + $x];
+                        echo (int) $_GET['data'][$y * 9 + $x];
                     }
                 }
                 ?>
@@ -224,7 +224,7 @@
                     </div>
                 </form>
             </div>
-            <form class="center-form" action="index.php">
+            <form id="centerpiece" class="center-form" action="index.php">
                 <input class="button" type="submit" name="submit" form="sudoku-input-form" value="Solve It!" />
                 <input class="button" type="submit" value="Reset">
                 <p class="info-box">
