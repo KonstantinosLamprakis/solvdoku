@@ -17,6 +17,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sudoku Solver, in 1 second you get your sudoku solution. Free. Easy. Online.">
     <link rel="icon" type="image/png" href="./assets/images/sudoku solution 500.png">
     <title>Sudoku Solver | Solvdoku</title>
     <link rel="stylesheet" href="css/style.css">
