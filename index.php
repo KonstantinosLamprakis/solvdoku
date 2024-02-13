@@ -230,7 +230,7 @@
                 <p class="info-box">
                     <?php if (isset($result)) {
                     echo $result;
-                }else{
+                } else {
                     echo "Thanks for using our sudoku solver. Hope you enjoy it &#128151;";
                 } ?>
                 </p>
@@ -444,7 +444,7 @@
             </div>
         </div>
         <footer>
-            The sudoku solver was created by<br />Konstantinos Lamprakis &#129309; Arthur Zhu
+            The sudoku solver was created by<br />Konstantinos Lamprakis &#129309; Arthur Zhu <i>I think</i>
         </footer>
     </div>
 </body>
