@@ -26,6 +26,7 @@ input[type='number'] {
     text-align: center;
     padding: 0;
     box-shadow: 0 0 4px #6A1366;
+    background-color: white;
 }
 
 .top {
@@ -58,6 +59,14 @@ input[type='number'] {
 
 .table-container {
     margin: 0 50px;
+    -webkit-box-shadow: 0 0 60px #EC8513;
+    box-shadow: 0 0 60px #EC8513;
+    margin-top: 15px;
+}
+
+
+.shadow-text{
+    text-shadow: 1px 1px black;
 }
 
 .button {
