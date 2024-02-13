@@ -17,7 +17,8 @@ if (isset($grid)) {
     
     $mygrid = &$grid;
 
-    if (!gridWorks($grid)) {
+    checkGrid($grid);
+    if (isset($GLOBALS["faultyCells"])) {
         $result = "Bad input.";
     } else {
         if (solveSudoku()) {
@@ -28,7 +29,7 @@ if (isset($grid)) {
     }
 }
 
-function gridWorks(array &$grid) : bool {
+function checkGrid(array &$grid) : void {
     for ($y = 0; $y < SIZE; $y++) {
         for ($x = 0; $x < SIZE; $x++) {
             if ($grid[$y][$x] === 0) {
@@ -37,15 +38,44 @@ function gridWorks(array &$grid) : bool {
             $num = $grid[$y][$x];
             $grid[$y][$x] = 0;
             $isSafe = isSafe($y, $x, $num);
+            if (!$isSafe) {
+                findFaulty($y, $x, $num);
+                $GLOBALS["faultyCells"][] = ["x" => $x, "y" => $y];
+            }
             $grid[$y][$x] = $num;
             if (!$isSafe) {
-                return false;
+                return;
             }
         }
     }
-    return true;
 }
 
+// marks all faulty cells with the current one in the first rule found
+function findFaulty(int $row, int $col, int $num) : void {
+    for ($i = 0; $i < SIZE; $i++) {
+        if ($GLOBALS["mygrid"][$row][$i] === $num) {
+            $GLOBALS["faultyCells"][] = ["x" => $i, "y" => $row];
+        }
+    }
+    if (isset($GLOBALS["faultyCells"])) { return; }
+
+    for ($i = 0; $i < SIZE; $i++) {
+        if ($GLOBALS["mygrid"][$i][$col] === $num) {
+            $GLOBALS["faultyCells"][] = ["x" => $col, "y" => $i];
+        }
+    }
+    if (isset($GLOBALS["faultyCells"])) { return; }
+    $startRow = $row - $row % 3;
+    $startCol = $col - $col % 3;
+
+    for ($y = 0; $y < 3; $y++) {
+        for ($x = 0; $x < 3; $x++) {
+            if ($GLOBALS["mygrid"][$startRow + $y][$startCol + $x] === $num) {
+                $GLOBALS["faultyCells"][] = ["x" => $startCol + $x, "y" => $startRow + $y];
+            }
+        }
+    }
+}
 
 function isSafe(int $row, int $col, int $num) : bool {
     for ($i = 0; $i < SIZE; $i++) {
