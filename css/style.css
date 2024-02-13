@@ -3,6 +3,10 @@ html body {
     margin-bottom: 30px;
 }
 
+.solution-cell-calculated {
+    color: #EC8513;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
