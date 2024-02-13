@@ -30,7 +30,7 @@
     </div>
     <div id="sudoku-flex">
         <div class="table-container">
-            <h2>Input Initial Sudoku Table</h2>
+            <h2 class="shadow-text">Input Initial Sudoku Table</h2>
             <form id="sudoku-input-form" method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <?php
                 function printCellInput(int $y, int $x): void
@@ -210,14 +210,17 @@
         <form class="center-form" action="index.php">
             <input class="button" type="submit" name="submit" form="sudoku-input-form" value="Solve It!" />
             <input class="button" type="submit" value="Reset">
+            <div><input class="button" type="submit" form="sudoku-input-form" value="Reset But Keep Input"></div>
             <p class="info-box">
                 <?php if (isset($result)) {
                     echo $result;
+                }else{
+                    echo "Thanks for using our software. Hope you enjoy it!";
                 } ?>
             </p>
         </form>
         <div class="table-container">
-            <h2>Result Sudoku</h2>
+            <h2 class="shadow-text">Result Sudoku</h2>
             <form>
                 <?php
                 function printCell(int $y, int $x): void
@@ -407,8 +410,6 @@
             </form>
         </div>
     </div>
-
-    <input type="submit" form="sudoku-input-form" value="[Keep Input]">
     <footer>
         created by Konstantinos Lamprakis and Arthur Zhu I think
     </footer>
