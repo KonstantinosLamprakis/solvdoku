@@ -153,3 +153,9 @@ footer{
     text-align: center;
     margin: 20px auto;
 }
+
+h1{
+    text-align: center;
+    color: #EC8513;
+    text-shadow: 1px 1px black;
+}
