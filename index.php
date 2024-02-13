@@ -220,7 +220,7 @@
             </p>
         </form>
         <div class="table-container">
-            <h2 class="shadow-text">Result Sudoku</h2>
+            <h2 class="shadow-text">Result Sudoku Table</h2>
             <form>
                 <?php
                 function printCell(int $y, int $x): void
