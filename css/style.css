@@ -9,6 +9,7 @@ html body {
 
 .output-call-faulty {
     background-color: #EC8513;
+    color: #6A1366;
 }
 
 input::-webkit-outer-spin-button,
