@@ -12,17 +12,6 @@ Welcome to Solvdoku! Solvdoku is a powerful web application designed to quickly 
 
 ## Getting Started
 
-### Using Solvdoku
-
-1. **Visit the Website:**
-   Go to [solvdoku.com](https://solvdoku.com/).
-
-2. **Input the Puzzle:**
-   Enter the initial numbers of your Sudoku puzzle into the grid.
-
-3. **Solve the Puzzle:**
-   Click the "Solve" button and watch Solvdoku quickly provide the solution.
-
 ## Development
 
 ### Tech Stack
