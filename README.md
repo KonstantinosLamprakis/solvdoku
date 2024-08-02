@@ -2,6 +2,8 @@
 
 [![Solvdoku](https://solvdoku.com/assets/images/logo.png)](https://solvdoku.com/)
 
+[![Solvdoku](https://github.com/KonstantinosLamprakis/solvdoku/blob/main/app_screenshot.png)](https://solvdoku.com/)
+
 Welcome to Solvdoku! Solvdoku is a powerful web application designed to quickly and efficiently solve Sudoku puzzles. Simply input the initial numbers of your Sudoku puzzle, and let Solvdoku do the rest.
 
 ## Features
